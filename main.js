@@ -44,24 +44,48 @@ var to2 = new IntersectionObserver(function (entries) {
 }, { threshold: .3 });
 var tb = document.getElementById("termb"); if (tb) to2.observe(tb);
 document.getElementById("fsub").addEventListener("click", function () {
-  var nm = document.getElementById("fn").value.trim(), em = document.getElementById("fe").value.trim();
+  var nm = document.getElementById("fn").value.trim();
+  var em = document.getElementById("fe").value.trim();
+  var org = document.getElementById("fo").value.trim();
+  var msg = document.getElementById("fm").value.trim();
   document.getElementById("fn").style.borderColor = nm ? "" : "rgba(231,76,60,.6)";
   document.getElementById("fe").style.borderColor = em ? "" : "rgba(231,76,60,.6)";
   if (!nm || !em) return;
-  document.getElementById("ffields").style.display = "none";
-  document.getElementById("fok").classList.add("on");
+  var btn = document.getElementById("fsub");
+  btn.textContent = "Sending...";
+  btn.disabled = true;
+  fetch("https://formspree.io/f/mnjooonj", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify({ name: nm, email: em, organization: org, message: msg })
+  })
+    .then(function (res) {
+      if (res.ok) {
+        document.getElementById("ffields").style.display = "none";
+        document.getElementById("fok").classList.add("on");
+      } else {
+        btn.textContent = "Send Message \u2192";
+        btn.disabled = false;
+        alert("Something went wrong. Please email teddystump14@gmail.com directly.");
+      }
+    })
+    .catch(function () {
+      btn.textContent = "Send Message \u2192";
+      btn.disabled = false;
+      alert("Network error. Please email teddystump14@gmail.com directly.");
+    });
 });
 ["fn", "fe"].forEach(function (id) { document.getElementById(id).addEventListener("input", function () { this.style.borderColor = ""; }); });
 
 // Roadmap bar animation
 var rmBars = document.querySelectorAll(".rmp-bar[data-w]");
-var rmObs = new IntersectionObserver(function(entries){
-  entries.forEach(function(e){
-    if(e.isIntersecting){
+var rmObs = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) {
       var w = e.target.dataset.w;
       e.target.style.width = w + "%";
       rmObs.unobserve(e.target);
     }
   });
-}, {threshold: 0.5});
-rmBars.forEach(function(b){ b.style.width = "0%"; rmObs.observe(b); });
+}, { threshold: 0.5 });
+rmBars.forEach(function (b) { b.style.width = "0%"; rmObs.observe(b); });
