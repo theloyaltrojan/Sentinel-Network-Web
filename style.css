@@ -2110,3 +2110,11 @@ footer {
         grid-template-columns: 1fr
     }
 }
+/* Formspree error states */
+[data-fs-success] { display: none; }
+[data-fs-success][style*="block"], [data-fs-success].fs-success-visible { display: block; }
+.ferr { font-family: "JetBrains Mono", monospace; font-size: .72rem; color: var(--red); padding: 8px 12px; border-radius: 4px; background: rgba(231,76,60,.08); border: 1px solid rgba(231,76,60,.25); margin-bottom: 16px; display: none; }
+.ferr:not(:empty) { display: block; }
+.ferrf { font-family: "JetBrains Mono", monospace; font-size: .67rem; color: var(--red); display: none; margin-top: 4px; }
+.ferrf:not(:empty) { display: block; }
+.finp[aria-invalid="true"], .ftxt[aria-invalid="true"] { border-color: rgba(231,76,60,.6); }

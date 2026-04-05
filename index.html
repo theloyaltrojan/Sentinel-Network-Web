@@ -505,20 +505,35 @@
       </div>
     </div>
     <div class="rev d2"><div class="cform">
-      <div id="ffields">
-        <div class="frow">
-          <div class="fg"><label class="flbl" for="fn">Name</label><input class="finp" id="fn" type="text" placeholder="Chief Johnson"/></div>
-          <div class="fg"><label class="flbl" for="fo">Organization</label><input class="finp" id="fo" type="text" placeholder="Metro PD"/></div>
-        </div>
-        <div class="fg"><label class="flbl" for="fe">Email Address</label><input class="finp" id="fe" type="email" placeholder="you@organization.gov"/></div>
-        <div class="fg"><label class="flbl" for="fm">Message</label><textarea class="ftxt" id="fm" placeholder="I am interested in a live demo for our department..."></textarea></div>
-        <button class="fsub" id="fsub">Send Message &#8594;</button>
-      </div>
-      <div class="fok" id="fok">
+      <div class="fok" data-fs-success>
         <div class="foki">&#9989;</div>
         <div class="fokt">Message Received</div>
         <p class="foks">We will be in touch within 24 hours to schedule a live demonstration. Thank you for your interest in Sentinel Network.</p>
       </div>
+      <div class="ferr" data-fs-error></div>
+      <form id="my-form">
+        <div class="frow">
+          <div class="fg">
+            <label class="flbl" for="fn">Name</label>
+            <input class="finp" id="fn" name="name" type="text" placeholder="Chief Johnson" data-fs-field/>
+            <span class="ferrf" data-fs-error="name"></span>
+          </div>
+          <div class="fg">
+            <label class="flbl" for="fo">Organization</label>
+            <input class="finp" id="fo" name="organization" type="text" placeholder="Metro PD"/>
+          </div>
+        </div>
+        <div class="fg">
+          <label class="flbl" for="fe">Email Address</label>
+          <input class="finp" id="fe" name="email" type="email" placeholder="you@organization.gov" data-fs-field/>
+          <span class="ferrf" data-fs-error="email"></span>
+        </div>
+        <div class="fg">
+          <label class="flbl" for="fm">Message</label>
+          <textarea class="ftxt" id="fm" name="message" placeholder="I am interested in a live demo for our department..." data-fs-field></textarea>
+        </div>
+        <button class="fsub" type="submit" data-fs-submit-btn>Send Message &#8594;</button>
+      </form>
     </div></div>
   </div></div>
 </section>
@@ -544,6 +559,11 @@
     </div>
   </div>
 </footer>
-<script src="main.js"></script>
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree("initForm", { formElement: "#my-form", formId: "mnjooonj" });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <script src="main.js"></script>
 </body>
 </html>
