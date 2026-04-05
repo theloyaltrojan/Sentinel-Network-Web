@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Sentinel Network - Autonomous AI Surveillance for First Responders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="ni">
+            <a href="#hero" class="logo"><span class="lm">SENTINEL</span><span class="ls">NETWORK</span></a>
+            <ul class="nl" id="navlinks">
+                <li><a href="#detects">Detection</a></li>
+                <li><a href="#feat">Features</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="cta">Request a Demo</a></li>
+            </ul>
+            <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="gbg"></div>
+        <div class="hglow"></div>
+        <div class="wrap">
+            <div class="hi">
+                <div>
+                    <div class="hbadge rev"><span class="hbdot"></span><span>Live System &#183; Detection Active</span>
+                    </div>
+                    <h1 class="hh rev d1">Autonomous<br><em>Eyes</em> on<br>Every Street</h1>
+                    <p class="hs rev d2">Sentinel Network is a mesh of AI-powered drones and smart cameras that detects
+                        fights, fires, shootings, riots, and more &#8212; then alerts the nearest first responder in
+                        real time. Zero human monitoring required.</p>
+                    <div class="hact rev d3">
+                        <a href="#hiw" class="bp">&#9654; See How It Works</a>
+                        <a href="#contact" class="bs">View Pitch Deck</a>
+                    </div>
+                    <div class="hstats rev d4">
+                        <div class="hstat"><span class="hnum" id="h1">0%</span><span class="hlbl">Detection
+                                Accuracy</span></div>
+                        <div class="hdiv"></div>
+                        <div class="hstat"><span class="hnum" id="h2">&lt;1s</span><span class="hlbl">Alert
+                                Response</span></div>
+                        <div class="hdiv"></div>
+                        <div class="hstat"><span class="hnum" id="h3">0</span><span class="hlbl">Camera Feeds
+                                Live</span></div>
+                    </div>
+                </div>
+                <div class="hvis rev d2">
+                    <div class="dscene">
+                        <div class="sgrid"></div>
+                        <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.35" viewBox="0 0 520 390"
+                            preserveAspectRatio="none">
+                            <rect x="0" y="260" width="80" height="130" fill="#0a1830" />
+                            <rect x="10" y="230" width="55" height="160" fill="#0d2040" />
+                            <rect x="90" y="280" width="60" height="110" fill="#091526" />
+                            <rect x="160" y="240" width="40" height="150" fill="#0a1830" />
+                            <rect x="175" y="210" width="28" height="180" fill="#0d2040" />
+                            <rect x="310" y="250" width="70" height="140" fill="#091526" />
+                            <rect x="390" y="270" width="55" height="120" fill="#0a1830" />
+                            <rect x="395" y="235" width="40" height="155" fill="#0d2040" />
+                            <rect x="455" y="255" width="65" height="135" fill="#091526" />
+                            <rect x="0" y="340" width="520" height="50" fill="#060e1a" />
+                            <line x1="130" y1="280" x2="130" y2="345" stroke="#1B6CA8" stroke-width="1.5"
+                                opacity=".6" />
+                            <circle cx="130" cy="278" r="3" fill="#F39C12" opacity=".8" />
+                            <line x1="360" y1="280" x2="360" y2="345" stroke="#1B6CA8" stroke-width="1.5"
+                                opacity=".6" />
+                            <circle cx="360" cy="278" r="3" fill="#F39C12" opacity=".8" />
+                            <rect x="16" y="244" width="8" height="6" fill="#F39C12" opacity=".4" />
+                            <rect x="30" y="244" width="8" height="6" fill="#1B6CA8" opacity=".5" />
+                            <rect x="178" y="225" width="6" height="5" fill="#F39C12" opacity=".5" />
+                            <rect x="190" y="225" width="6" height="5" fill="#1B6CA8" opacity=".4" />
+                            <rect x="400" y="248" width="7" height="5" fill="#F39C12" opacity=".4" />
+                            <rect x="413" y="248" width="7" height="5" fill="#1B6CA8" opacity=".35" />
+                        </svg>
+                        <div class="shud">
+                            <div class="cn tl"></div>
+                            <div class="cn tr"></div>
+                            <div class="cn bl"></div>
+                            <div class="cn br"></div>
+                            <div class="hst">
+                                <div class="sdot"></div><span>LIVE &#183; AI ACTIVE</span>
+                            </div>
+                            <div class="hts" id="hts">20:04:14 &#183; CAM-01</div>
+                            <div class="db db1" data-label="PERSON" data-conf="87.3%"></div>
+                            <div class="db db2" data-label="&#9888; FIGHT" data-conf="94.2%"></div>
+                            <div class="pr p1"></div>
+                            <div class="pr p2"></div>
+                            <div class="pr p3"></div>
+                            <div class="sweep"></div>
+                            <div class="xhair"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="problem">
+        <div class="gbg"></div>
+        <div class="wrap">
+            <div class="phdr rev">
+                <div class="sl" style="justify-content:center">The Problem</div>
+                <h2 class="ptit">The System is Already Broken</h2>
+            </div>
+            <div class="scards">
+                <div class="sc rev d1"><span class="snum cnt" data-t="12">0</span>
+                    <div class="slbl">Min &#8212; Avg U.S. Police Response Time</div>
+                    <p class="sdsc">In a stabbing, shooting, or cardiac event &#8212; twelve minutes is the difference
+                        between life and death.</p>
+                </div>
+                <div class="sc rev d2"><span class="snum cnt" data-t="30" data-s="%">0</span>
+                    <div class="slbl">Departments Reporting Critical Understaffing</div>
+                    <p class="sdsc">Officers cannot be everywhere. Departments are stretched thin, leaving entire zones
+                        unmonitored.</p>
+                </div>
+                <div class="sc rev d3"><span class="snum" style="font-size:clamp(2.8rem,5vw,4.5rem)">$15B+</span>
+                    <div class="slbl">Annual U.S. Public Safety Tech Spending</div>
+                    <p class="sdsc">Billions spent on passive cameras that watch incidents happen and do nothing without
+                        a human watching.</p>
+                </div>
+            </div>
+            <div class="pbody rev">
+                <p>Traditional surveillance is <strong>passive</strong>. Cameras record &#8212; they do not act. 911
+                    depends on bystanders to notice, dial, and describe. Fires spread. Shots ring out. Riots escalate.
+                    Officers respond blind. <strong>Sentinel Network changes the equation</strong>: AI detects the
+                    incident, determines the location, and alerts the right unit before a bystander even unlocks their
+                    phone.</p>
+            </div>
+        </div>
+    </section>
+    <section id="hiw">
+        <div class="wrap">
+            <div class="hiwh rev">
+                <div class="sl dk">Operational Flow</div>
+                <h2 class="hiwtit">From Detection to<br>Dispatch in Seconds</h2>
+            </div>
+            <div class="steps">
+                <div class="step rev d1">
+                    <div class="snw"><span class="sico">&#128247;</span><span class="sno">01</span></div>
+                    <div class="stit">AI Detects an Incident</div>
+                    <p class="sdesc">A Sentinel drone or fixed camera captures live footage. YOLOv8 scans every frame
+                        for fights, fires, weapons, riots, shootings, and suspicious activity &#8212; 24/7.</p>
+                </div>
+                <div class="step rev d2">
+                    <div class="snw"><span class="sico">&#129504;</span><span class="sno">02</span></div>
+                    <div class="stit">AI Classifies &amp; Locates</div>
+                    <p class="sdesc">The model identifies event type and confidence level. GPS metadata tags the exact
+                        location &#8212; down to the block &#8212; in real time.</p>
+                </div>
+                <div class="step rev d3">
+                    <div class="snw"><span class="sico">&#128276;</span><span class="sno">03</span></div>
+                    <div class="stit">Alert Fires Instantly</div>
+                    <p class="sdesc">The live dashboard updates and an SMS alert fires to dispatch within seconds
+                        &#8212; event type, clip, location, and confidence score included.</p>
+                </div>
+                <div class="step rev d4">
+                    <div class="snw"><span class="sico">&#128664;</span><span class="sno">04</span></div>
+                    <div class="stit">Nearest Unit Dispatched</div>
+                    <p class="sdesc">The dispatcher routes the nearest available unit &#8212; police, fire, or EMS
+                        depending on the incident type. No civilian call needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="detects">
+        <div class="gbg"></div>
+        <div class="wrap">
+            <div class="dthdr rev">
+                <div class="sl">What Sentinel Detects</div>
+                <h2 class="dttit">Every Threat. Every Camera.<br>Every Second.</h2>
+            </div>
+            <div class="dtgrid">
+                <div class="dtcard live rev d1">
+                    <span class="dtbadge live">Live Now</span>
+                    <span class="dticon">&#128293;</span>
+                    <div class="dtname">Physical Altercations</div>
+                    <p class="dtdesc">Real-time detection of fights, brawls, and physical assaults using pose estimation
+                        and motion analysis. Currently live and running in production on active camera feeds.</p>
+                </div>
+                <div class="dtcard coming rev d2">
+                    <span class="dtbadge coming">Phase 3</span>
+                    <span class="dticon">&#128293;</span>
+                    <div class="dtname">Fire &amp; Smoke</div>
+                    <p class="dtdesc">Thermal signature and visual smoke detection for structure fires, vehicle fires,
+                        and arson events &#8212; alerting fire departments before 911 calls come in.</p>
+                </div>
+                <div class="dtcard coming rev d3">
+                    <span class="dtbadge coming">Phase 3</span>
+                    <span class="dticon">&#128299;</span>
+                    <div class="dtname">Weapon Detection</div>
+                    <p class="dtdesc">Computer vision identification of firearms, knives, and other weapons in public
+                        spaces. Flags armed individuals before an incident escalates.</p>
+                </div>
+                <div class="dtcard coming rev d4">
+                    <span class="dtbadge coming">Phase 3</span>
+                    <span class="dticon">&#128680;</span>
+                    <div class="dtname">Riots &amp; Crowd Escalation</div>
+                    <p class="dtdesc">Crowd density analysis and behavior pattern detection to identify gatherings that
+                        are escalating into riots, looting, or civil unrest before they become unmanageable.</p>
+                </div>
+                <div class="dtcard coming rev d5">
+                    <span class="dtbadge coming">Phase 3</span>
+                    <span class="dticon">&#128165;</span>
+                    <div class="dtname">Gunshot &amp; Shooting Events</div>
+                    <p class="dtdesc">Visual flash detection and scene-context analysis to identify active shooter
+                        situations and gunfire events, dispatching armed units with immediate GPS precision.</p>
+                </div>
+                <div class="dtcard coming rev">
+                    <span class="dtbadge coming">Phase 3</span>
+                    <span class="dticon">&#128692;</span>
+                    <div class="dtname">Suspicious Vehicles</div>
+                    <p class="dtdesc">License plate recognition and behavioral pattern analysis to flag stolen vehicles,
+                        abandoned packages, and vehicles matching active crime alerts in real time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feat">
+        <div class="gbg" style="opacity:.5"></div>
+        <div class="wrap">
+            <div class="fhdr rev">
+                <div class="sl">Current Build Status</div>
+                <h2 class="ftit">What We Have Built.<br>What Is Coming.</h2>
+            </div>
+            <div class="fgrid">
+                <ul class="flist">
+                    <li class="fi rev d1">
+                        <div class="fico ok">&#10003;</div>
+                        <div>
+                            <div class="fn">Real-time AI fight detection on live camera feed</div>
+                            <div class="fst ok">Live &#183; Production</div>
+                        </div>
+                    </li>
+                    <li class="fi rev d2">
+                        <div class="fico ok">&#10003;</div>
+                        <div>
+                            <div class="fn">Automatic clip recording when alert fires</div>
+                            <div class="fst ok">Live &#183; Production</div>
+                        </div>
+                    </li>
+                    <li class="fi rev d3">
+                        <div class="fico ok">&#10003;</div>
+                        <div>
+                            <div class="fn">SMS alert dispatched to real phone on detection</div>
+                            <div class="fst ok">Live &#183; Production</div>
+                        </div>
+                    </li>
+                    <li class="fi rev d4">
+                        <div class="fico ok">&#10003;</div>
+                        <div>
+                            <div class="fn">Live web dashboard with stats and event log</div>
+                            <div class="fst ok">Live &#183; Production</div>
+                        </div>
+                    </li>
+                    <li class="fi rev d5">
+                        <div class="fico ok">&#10003;</div>
+                        <div>
+                            <div class="fn">Multi-camera support &#8212; laptop &amp; drone feed</div>
+                            <div class="fst ok">Live &#183; Production</div>
+                        </div>
+                    </li>
+                    <li class="fi rev">
+                        <div class="fico wip">&#8250;</div>
+                        <div>
+                            <div class="fn dim">Raspberry Pi standalone outdoor node</div>
+                            <div class="fst wip">In Progress</div>
+                        </div>
+                    </li>
+                    <li class="fi rev">
+                        <div class="fico wip">&#8250;</div>
+                        <div>
+                            <div class="fn dim">GPS location tagging on every event</div>
+                            <div class="fst wip">In Progress</div>
+                        </div>
+                    </li>
+                    <li class="fi rev">
+                        <div class="fico wip">&#8250;</div>
+                        <div>
+                            <div class="fn dim">Custom-trained multi-threat detection model</div>
+                            <div class="fst wip">In Progress</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="rev d2">
+                    <div class="term">
+                        <div class="tbar"><span class="td tdr"></span><span class="td tdy"></span><span
+                                class="td tdg"></span><span class="ttit">sentinel &#8212; event_log.stream</span></div>
+                        <div class="tbody" id="termb">
+                            <span class="ll" data-ms="200"><span
+                                    class="lx">&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</span></span>
+                            <span class="ll" data-ms="500"><span class="lt">[20:04:11] </span><span class="lm">System
+                                    initialized &#183; 2 cameras active</span></span>
+                            <span class="ll" data-ms="950"><span class="lt">[20:04:13] </span><span class="lm">Scanning
+                                    &#183; YOLOv8 threshold: </span><span class="lc">0.65</span></span>
+                            <span class="ll" data-ms="1400"><span
+                                    class="lx">&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</span></span>
+                            <span class="ll" data-ms="1900"><span class="lt">[20:04:14] </span><span class="la">&#9888;
+                                    ALERT &#8212; Fight detected</span></span>
+                            <span class="ll" data-ms="2300"><span class="lt">[20:04:14] </span><span
+                                    class="lm">Confidence: </span><span class="lc">94.2%</span></span>
+                            <span class="ll" data-ms="2700"><span class="lt">[20:04:14] </span><span class="lm">Camera:
+                                </span><span class="lv">CAM-01 &#183; 1080p</span></span>
+                            <span class="ll" data-ms="3100"><span class="lt">[20:04:14] </span><span
+                                    class="lm">Location: </span><span class="lk">40.7128&#176; N, 74.0060&#176;
+                                    W</span></span>
+                            <span class="ll" data-ms="3600"><span class="lt">[20:04:14] </span><span class="lm">Clip
+                                    saved &#8594; </span><span class="lv">events/20240414_200414.mp4</span></span>
+                            <span class="ll" data-ms="4100"><span class="lt">[20:04:15] </span><span class="ls">SMS
+                                    dispatched &#8594; Unit 7 &#183; ETA 2.3 min</span></span>
+                            <span class="ll" data-ms="4650"><span class="lt">[20:04:15] </span><span
+                                    class="lv">Dashboard updated &#183; Event #0047</span></span>
+                            <span class="ll" data-ms="5150"><span
+                                    class="lx">&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</span></span>
+                            <span class="ll" data-ms="5650"><span class="lt">[20:04:16] </span><span class="lm">Resuming
+                                    scan &#183; Monitoring active</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="roadmap">
+        <div class="wrap">
+            <div class="roadmap-hdr rev">
+                <div class="sl dk">Production Roadmap</div>
+                <h2 class="rmtit">Where We Are.<br>Where We Are Going.</h2>
+            </div>
+            <div class="rmline">
+                <div class="rmp rev d1">
+                    <div class="rmp-dot done"><span class="rmp-dot-ico">&#10003;</span></div>
+                    <div class="rmp-body">
+                        <div class="rmp-phase done">Phase 1 &#8212; Complete</div>
+                        <div class="rmp-title">Core Detection System</div>
+                        <div class="rmp-items">
+                            <span class="rmp-item done">Real-time fight detection</span>
+                            <span class="rmp-item done">SMS alert pipeline</span>
+                            <span class="rmp-item done">Live web dashboard</span>
+                            <span class="rmp-item done">Multi-camera support</span>
+                            <span class="rmp-item done">Clip auto-recording</span>
+                        </div>
+                        <div class="rmp-bar-wrap">
+                            <div class="rmp-bar done" data-w="100"></div>
+                        </div>
+                        <div class="rmp-pct">100% complete &#183; Running in production</div>
+                    </div>
+                </div>
+                <div class="rmp rev d2">
+                    <div class="rmp-dot active"><span class="rmp-dot-ico">&#9654;</span></div>
+                    <div class="rmp-body">
+                        <div class="rmp-phase active">Phase 2 &#8212; In Progress</div>
+                        <div class="rmp-title">Expanded Hardware &amp; Location</div>
+                        <div class="rmp-items">
+                            <span class="rmp-item active">Raspberry Pi outdoor node</span>
+                            <span class="rmp-item active">GPS location tagging</span>
+                            <span class="rmp-item active">Custom-trained model</span>
+                            <span class="rmp-item todo">Drone feed integration</span>
+                            <span class="rmp-item todo">Edge compute optimization</span>
+                        </div>
+                        <div class="rmp-bar-wrap">
+                            <div class="rmp-bar active" data-w="60"></div>
+                        </div>
+                        <div class="rmp-pct">~60% complete &#183; Active development</div>
+                    </div>
+                </div>
+                <div class="rmp rev d3">
+                    <div class="rmp-dot next"><span class="rmp-dot-ico">&#9675;</span></div>
+                    <div class="rmp-body">
+                        <div class="rmp-phase next">Phase 3 &#8212; Upcoming</div>
+                        <div class="rmp-title">Multi-Threat Detection</div>
+                        <div class="rmp-items">
+                            <span class="rmp-item todo">Fire &amp; smoke detection</span>
+                            <span class="rmp-item todo">Weapon identification</span>
+                            <span class="rmp-item todo">Riot &amp; crowd escalation</span>
+                            <span class="rmp-item todo">Gunshot event detection</span>
+                            <span class="rmp-item todo">Suspicious vehicle tracking</span>
+                        </div>
+                        <div class="rmp-bar-wrap">
+                            <div class="rmp-bar next" data-w="5"></div>
+                        </div>
+                        <div class="rmp-pct">Research phase &#183; Model training planned</div>
+                    </div>
+                </div>
+                <div class="rmp rev d4">
+                    <div class="rmp-dot future"><span class="rmp-dot-ico">&#9726;</span></div>
+                    <div class="rmp-body">
+                        <div class="rmp-phase future">Phase 4 &#8212; Planned</div>
+                        <div class="rmp-title">Department Deployment</div>
+                        <div class="rmp-items">
+                            <span class="rmp-item todo">Pilot department partnerships</span>
+                            <span class="rmp-item todo">CAD / dispatch integration</span>
+                            <span class="rmp-item todo">Drone mesh network</span>
+                            <span class="rmp-item todo">Federal certification pursuit</span>
+                            <span class="rmp-item todo">Multi-city scaling</span>
+                        </div>
+                        <div class="rmp-bar-wrap">
+                            <div class="rmp-bar future" data-w="0"></div>
+                        </div>
+                        <div class="rmp-pct">Seeking pilot partners now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section id="comp">
+  <div class="wrap">
+    <div class="chdr rev"><div class="sl dk">Competitive Landscape</div><h2 class="ctit">Why Sentinel Wins</h2></div>
+    <div class="twrap rev">
+      <table class="ct">
+        <thead><tr><th>Capability</th><th class="cs">&#9679; Sentinel Network</th><th class="cc">Standard CCTV</th><th class="ca">Axon / Motorola</th></tr></thead>
+        <tbody>
+          <tr><td>Real-time AI incident detection</td><td class="cs"><span class="chk">&#10003;</span></td><td><span class="xmk">&#8212;</span></td><td><span class="prt">Partial</span></td></tr>
+          <tr><td>Multi-threat detection (fights, fires, weapons)</td><td class="cs"><span class="chk">&#10003;</span></td><td><span class="xmk">&#8212;</span></td><td><span class="xmk">&#8212;</span></td></tr>
+          <tr><td>Drone + fixed camera mesh</td><td class="cs"><span class="chk">&#10003;</span></td><td><span class="xmk">&#8212;</span></td><td><span class="xmk">&#8212;</span></td></tr>
+          <tr><td>Autonomous alert &#8212; no human monitor</td><td class="cs"><span class="chk">&#10003;</span></td><td><span class="xmk">&#8212;</span></td><td><span class="xmk">&#8212;</span></td></tr>
+          <tr><td>GPS location on every event</td><td class="cs"><span class="chk">&#10003;</span></td><td><span class="xmk">&#8212;</span></td><td><span class="prt">Partial</span></td></tr>
+          <tr><td>Automated dispatch integration</td><td class="cs"><span class="chk">&#10003;</span></td><td><span class="xmk">&#8212;</span></td><td><span class="prt">Partial</span></td></tr>
+          <tr><td>Works offline / edge compute</td><td class="cs"><span class="chk">&#10003;</span></td><td><span class="chk">&#10003;</span></td><td><span class="xmk">&#8212;</span></td></tr>
+          <tr><td>Built for municipal budgets</td><td class="cs"><span class="chk">&#10003;</span></td><td><span class="prt">Varies</span></td><td><span class="xmk">&#8212;</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="gbg" style="opacity:.4"></div><div class="wrap">
+    <div class="aint rev">
+      <div class="sl" style="justify-content:center">The Founders</div>
+      <h2 class="atit">Built by Two High School<br>Founders. For Real Stakes.</h2>
+      <p class="asub">We started Sentinel Network with a simple belief: the tools to detect danger exist &#8212; they just have not been pointed at the right problem. We are fixing that.</p>
+    </div>
+    <div class="tgrid">
+      <div class="fc rev d1">
+        <div class="fav">TS</div>
+        <div class="fnm">Theodore Stump</div>
+        <div class="frl">Co-Founder &#183; Product &amp; Engineering</div>
+        <p class="fbio">Built the full Sentinel detection pipeline in Python using YOLOv8 &#8212; from live camera ingestion and multi-feed processing to SMS alerting and the real-time web dashboard. FAA Part 107 certified drone pilot. Freshman in high school with a production-grade AI system already running.</p>
+        <div class="ftags">
+          <span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">Computer Vision</span>
+          <span class="tag">FAA Part 107</span><span class="tag">Raspberry Pi</span><span class="tag">Systems Design</span>
+        </div>
+        <div class="founder-contact">
+          <a href="tel:6502475140">&#128222; (650) 247-5140</a>
+          <a href="mailto:teddystump14@gmail.com">&#9993; teddystump14@gmail.com</a>
+        </div>
+      </div>
+      <div class="fc rev d2">
+        <div class="fav">ZP</div>
+        <div class="fnm">Zen Pereira</div>
+        <div class="frl">Co-Founder &#183; Growth &amp; Strategy</div>
+        <p class="fbio">Leads Sentinel&#8217;s go-to-market strategy, competitive intelligence, and police department outreach. Responsible for positioning the product in the $15B+ public safety market, identifying pilot partners, and building the institutional relationships that turn a prototype into a deployed system.</p>
+        <div class="ftags">
+          <span class="tag">Market Strategy</span><span class="tag">Govt Outreach</span><span class="tag">Competitive Analysis</span>
+          <span class="tag">Partnerships</span><span class="tag">Pitch &amp; Fundraising</span>
+        </div>
+        <div class="founder-contact">
+          <a href="tel:6502137985">&#128222; (650) 213-7985</a>
+          <a href="mailto:zenpereira2011@gmail.com">&#9993; zenpereira2011@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="gbg" style="opacity:.3"></div><div class="cglow"></div>
+  <div class="wrap"><div class="cinn">
+    <div class="rev">
+      <div class="sl">Get In Touch</div>
+      <h2 class="ctitle">Ready to<br>See It <em>Live?</em></h2>
+      <p class="csub">We are looking for police departments, advisors, and early investors to partner with. If you want to see the system run on real footage &#8212; we will show you.</p>
+      <ul class="cbuls">
+        <li class="cbul"><span class="cbico">&#128170;</span>Pilot partner departments &#8212; zero upfront cost</li>
+        <li class="cbul"><span class="cbico">&#128200;</span>Investors interested in public safety infrastructure</li>
+        <li class="cbul"><span class="cbico">&#129504;</span>Technical advisors and law enforcement consultants</li>
+        <li class="cbul"><span class="cbico">&#127942;</span>Competition judges &#8212; live demo available on request</li>
+      </ul>
+      <div class="cinfo">
+        <div class="cinfocard">
+          <div class="cinfoav">TS</div>
+          <div>
+            <div class="cinfoname">Theodore Stump &#8212; Product &amp; Engineering</div>
+            <div class="cinfolinks">
+              <a href="tel:6502475140">&#128222; (650) 247-5140</a>
+              <a href="mailto:teddystump14@gmail.com">&#9993; teddystump14@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="cinfocard">
+          <div class="cinfoav">ZP</div>
+          <div>
+            <div class="cinfoname">Zen Pereira &#8212; Growth &amp; Strategy</div>
+            <div class="cinfolinks">
+              <a href="tel:6502137985">&#128222; (650) 213-7985</a>
+              <a href="mailto:zenpereira2011@gmail.com">&#9993; zenpereira2011@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rev d2"><div class="cform">
+      <div id="ffields">
+        <div class="frow">
+          <div class="fg"><label class="flbl" for="fn">Name</label><input class="finp" id="fn" type="text" placeholder="Chief Johnson"/></div>
+          <div class="fg"><label class="flbl" for="fo">Organization</label><input class="finp" id="fo" type="text" placeholder="Metro PD"/></div>
+        </div>
+        <div class="fg"><label class="flbl" for="fe">Email Address</label><input class="finp" id="fe" type="email" placeholder="you@organization.gov"/></div>
+        <div class="fg"><label class="flbl" for="fm">Message</label><textarea class="ftxt" id="fm" placeholder="I am interested in a live demo for our department..."></textarea></div>
+        <button class="fsub" id="fsub">Send Message &#8594;</button>
+      </div>
+      <div class="fok" id="fok">
+        <div class="foki">&#9989;</div>
+        <div class="fokt">Message Received</div>
+        <p class="foks">We will be in touch within 24 hours to schedule a live demonstration. Thank you for your interest in Sentinel Network.</p>
+      </div>
+    </div></div>
+  </div></div>
+</section>
+<footer>
+  <div class="gbg"></div><div class="wrap">
+    <div class="finn">
+      <div>
+        <div class="lm">SENTINEL</div>
+        <div style="font-family:JetBrains Mono,monospace;font-size:.5rem;letter-spacing:.35em;color:#2280c8;margin-top:2px">NETWORK</div>
+        <div class="ftag">Autonomous Eyes on Every Street</div>
+      </div>
+      <ul class="flinks">
+        <li><a href="#detects">Detection</a></li>
+        <li><a href="#feat">Features</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="fbot">
+      <span class="fconf">&#9632; Confidential &#8212; Built by Theodore Stump &amp; Zen Pereira</span>
+      <span class="fcopy">&#169; 2025 Sentinel Network &#8212; All rights reserved</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
